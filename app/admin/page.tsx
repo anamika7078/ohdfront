@@ -320,9 +320,6 @@ export default function AdminDashboard() {
                 <CartesianGrid strokeDasharray="3 3" />
                 <XAxis type="number" domain={[0, 100]} />
                 <YAxis dataKey="name" type="category" width={150} />
-                <Tooltip
-                  formatter={(value: number | string) => `${value}%`}
-                />
                 <Legend />
                 <Bar dataKey="percentage" fill="#8b5cf6" name="Performance %" />
               </BarChart>
